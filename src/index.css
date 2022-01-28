@@ -18,15 +18,21 @@ body {
 
 .appHeader button {
   flex-grow: 1;
-  border: 1px solid black;
+  border: 1px solid slategray;
   background-color: lightgrey;
   color: black;
 }
 
+.appHeader button[disabled] {
+  border: 1px solid black;
+}
+
 .appHeader button:hover {
   cursor: pointer;
-  background-color: black;
-  color: white;
+}
+
+.appHeader button[disabled]:hover {
+  cursor: default;
 }
 
 main {
