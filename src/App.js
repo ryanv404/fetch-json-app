@@ -5,7 +5,7 @@ import { useEffect } from 'react/cjs/react.development';
 
 const App = () => {
   const API_URL = 'https://jsonplaceholder.typicode.com/';
-  const [data, setData] = useState([]);
+  const [data, setData] = useState('');
   const [resType, setResType] = useState('users');
 
   const handleButtonColor = (btn_name) => {
